@@ -9,7 +9,144 @@
 </head>
 
 <body>
+<!--Main container-->
+  <div class="wrapper">
+    <aside class="sidebar">
+      <img class="my-photo" src="./img/photo.jpg" alt="My photo" />
 
+      <!--Contacts container-->
+      <div class="contact-container">
+        <h3 class="contact-title">Contacts</h3>
+        <div>
+          <span class="contact-link-type">Phone:</span>
+          <a class="contact-link" href="tel:380971687073">+38 097 168 70 73</a>
+        </div>
+        <div>
+          <span class="contact-link-type">Email:</span>
+          <a class="contact-link" href="mailto:ivanishenko.alexander@gmail.com">ivanishenko.alexander@gmail.com</a>
+        </div>
+        <div>
+          <span class="contact-link-type">Discord:</span>
+          <a class="contact-link" href="#">Alexander (@alexivanishenko)</a>
+        </div>
+      </div>
+
+      <!--Skills container-->
+      <div class="skills-container">
+        <h3 class="skills-title">Skills</h3>
+        <ul>
+          <li class="skills-item">
+            <span class="skill-text">HTML5</span>
+          </li>
+          <li class="skills-item">
+            <span class="skill-text">CSS3</span>
+          </li>
+          <li class="skills-item">
+            <span class="skill-text">BEM</span>
+          </li>
+          <li class="skills-item">
+            <span class="skill-text">Basic JavaScript</span>
+          </li>
+          <li class="skills-item">
+            <span class="skill-text">Git/Github</span>
+          </li>
+          <li class="skills-item">
+            <span class="skill-text">CodeIgniter</span>
+          </li>
+          <li class="skills-item">
+            <span class="skill-text">MySQL</span>
+          </li>
+          <li class="skills-item">
+            <span class="skill-text">Figma/Photoshop/Avocode/Zeplin</span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!--About me container-->
+    <div class="about-me-container">
+      <!--About me main info-->
+      <div class="info-container">
+        <h2 class="profession">Junior Front-End Developer</h2>
+        <h1 class="name">Alexander Ivanishenko</h1>
+        <p class="description">
+          My aim is to become a Front End Developer, to learn and aply my knowlege in practice, benefiting the company.
+        </p>
+      </div>
+
+      <!--Examples container-->
+      <div class="example-container">
+        <h3 class="section-title">Example of code</h3>
+
+        <pre>
+            <code class="lang-javascript">function renderSum(sum) {
+              const costElement = document.querySelector('.calculator-form-total-cost');
+        
+              costElement.textContent = 'Calculating...';
+        
+              setTimeout(function () {
+              costElement.textContent = sum + '$';
+              }, 2000);
+            }</code>
+          </pre>
+      </div>
+
+      <!--Work experience-->
+      <div class="experience-container">
+        <h3 class="section-title">Work experience</h3>
+        <!--company 1-->
+        <div>
+          <h4 class="profession-title">Developer <span class="profession-company">Site "Articles and materials to create
+              sites»</span></h4>
+          <span class="profession-time">
+            March 2012 - September 2017 <span class="prof-divider">|</span> Ukraine
+          </span>
+
+          <ul class="prof-duties">
+            <li class="prof-duties-item">Personal development website on PHP framework CodeIgniter.</li>
+            <li class="prof-duties-item">Technical support.</li>
+            <li class="prof-duties-item">Management and administration of the project.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!--Education-->
+      <div class="education-container">
+        <h3 class="section-title">Education</h3>
+        <div>
+          <p class="my-university">Mykhailo Ostrohradskyi Kremenchuk National University</p>
+          <p class="univer-prof-name">Computer systems and networks</p>
+          <span class="univer-time">
+            September 2005 - June 2010 <span class="univer-divider">|</span> Ukraine
+          </span>
+        </div>
+
+        <div>
+          <p class="my-university">GoIT JavaScript Mini Course</p>
+          <span class="univer-time">August 2021 <span class="univer-divider">|</span> Ukraine
+          </span>
+        </div>
+      </div>
+
+      <!--Languages-->
+      <div class="languages-container">
+        <h3 class="section-title">Languages</h3>
+        <div>
+          <ul>
+            <li class="lang-item">
+              <span class="lang-text">Ukraine: native</span>
+            </li>
+            <li class="lang-item">
+              <span class="lang-text">Russian: native</span>
+            </li>
+            <li class="lang-item">
+              <span class="lang-text">English: A1</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
