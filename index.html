@@ -2,39 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/github.css" />
-    <title>My resume</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/github.css" />
+  <title>My resume</title>
 </head>
 
 <body>
-<!--Main container-->
+  <!-- Wrapper -->
   <div class="wrapper">
     <aside class="sidebar">
       <img class="my-photo" src="./img/photo.jpg" alt="My photo" />
 
-      <!--Contacts container-->
-      <div class="contact-container">
+      <!-- Contacts container -->
+      <section class="contact-container">
         <h3 class="contact-title">Contacts</h3>
-        <div>
-          <span class="contact-link-type">Phone:</span>
-          <a class="contact-link" href="tel:380971687073">+38 097 168 70 73</a>
-        </div>
-        <div>
-          <span class="contact-link-type">Email:</span>
-          <a class="contact-link" href="mailto:ivanishenko.alexander@gmail.com">ivanishenko.alexander@gmail.com</a>
-        </div>
-        <div>
-          <span class="contact-link-type">Discord:</span>
-          <a class="contact-link" href="#">Alexander (@alexivanishenko)</a>
-        </div>
-      </div>
+        <ul>
+          <li>
+            <span class="contact-link-type">Phone:</span>
+            <a class="contact-link" href="tel:380971687073">+38 097 168 70 73</a>
+          </li>
+          <li>
+            <span class="contact-link-type">Email:</span>
+            <a class="contact-link" href="mailto:ivanishenko.alexander@gmail.com">ivanishenko.alexander@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-link-type">Discord:</span>
+            <a class="contact-link" href="https://discord.com/users/398834515323256843">GraffAlex#7848</a>
+          </li>
+        </ul>
+      </section>
 
-      <!--Skills container-->
-      <div class="skills-container">
+      <!-- Skills container -->
+      <section class="skills-container">
         <h3 class="skills-title">Skills</h3>
         <ul>
           <li class="skills-item">
@@ -50,7 +52,7 @@
             <span class="skill-text">Basic JavaScript</span>
           </li>
           <li class="skills-item">
-            <span class="skill-text">Git/Github</span>
+            <span class="skill-text">Git</span>
           </li>
           <li class="skills-item">
             <span class="skill-text">CodeIgniter</span>
@@ -62,22 +64,22 @@
             <span class="skill-text">Figma/Photoshop/Avocode/Zeplin</span>
           </li>
         </ul>
-      </div>
+      </section>
     </aside>
 
-    <!--About me container-->
-    <div class="about-me-container">
-      <!--About me main info-->
-      <div class="info-container">
-        <h2 class="profession">Junior Front-End Developer</h2>
-        <h1 class="name">Alexander Ivanishenko</h1>
-        <p class="description">
+    <!-- About me container -->
+    <main class="about-me-container">
+      <!-- About me main info -->
+      <header class="info-container">
+        <h2 class="my-profession">Junior Front-End Developer</h2>
+        <h1 class="my-name">Alexander Ivanishenko</h1>
+        <p class="my-description">
           My aim is to become a Front End Developer, to learn and aply my knowlege in practice, benefiting the company.
         </p>
-      </div>
+      </header>
 
-      <!--Examples container-->
-      <div class="example-container">
+      <!-- Example code container -->
+      <section class="example-code-container">
         <h3 class="section-title">Example of code</h3>
 
         <pre>
@@ -91,12 +93,12 @@
               }, 2000);
             }</code>
           </pre>
-      </div>
+      </section>
 
-      <!--Work experience-->
-      <div class="experience-container">
+      <!-- Work experience -->
+      <section class="experience-container">
         <h3 class="section-title">Work experience</h3>
-        <!--company 1-->
+        <!-- company 1 -->
         <div>
           <h4 class="profession-title">Developer <span class="profession-company">Site "Articles and materials to create
               sites»</span></h4>
@@ -110,11 +112,12 @@
             <li class="prof-duties-item">Management and administration of the project.</li>
           </ul>
         </div>
-      </div>
+      </section>
 
-      <!--Education-->
-      <div class="education-container">
+      <!-- Education container -->
+      <section class="education-container">
         <h3 class="section-title">Education</h3>
+        <!-- education 1 -->
         <div>
           <p class="my-university">Mykhailo Ostrohradskyi Kremenchuk National University</p>
           <p class="univer-prof-name">Computer systems and networks</p>
@@ -122,16 +125,16 @@
             September 2005 - June 2010 <span class="univer-divider">|</span> Ukraine
           </span>
         </div>
-
+        <!-- education 2 -->
         <div>
           <p class="my-university">GoIT JavaScript Mini Course</p>
           <span class="univer-time">August 2021 <span class="univer-divider">|</span> Ukraine
           </span>
         </div>
-      </div>
+      </section>
 
-      <!--Languages-->
-      <div class="languages-container">
+      <!-- Languages container -->
+      <section class="languages-container">
         <h3 class="section-title">Languages</h3>
         <div>
           <ul>
@@ -146,8 +149,11 @@
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>© 2021 <a href="https://github.com/alexivanishenko" target="_blank">Alexander Ivanishenko</a></p>
+    </footer>
   </div>
   <script src="./js/highlight.min.js"></script>
   <script>hljs.highlightAll();</script>
